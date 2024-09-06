@@ -1,5 +1,18 @@
+from time import localtime
+
 def evaluar(dia, mes, anno):
-    # TODO: Coloca aquí el código del ejercicio 6: Edad
+    year = anno
+
+    t = localtime()
+    a_day = t.tm_mday
+    a_mes = t.tm_mon
+    a_year = t.tm_year
+
+    dif = a_year - year
+    if(a_mes < mes and a_day < dia):
+        dif-=1
+    return f'Usted tiene {dif} años'
+
     return "";
 
 if __name__ == '__main__':

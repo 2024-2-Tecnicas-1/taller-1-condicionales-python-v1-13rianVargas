@@ -1,5 +1,17 @@
 def evaluar(a, b, c):
-    # TODO: Coloca aquí el código del ejercicio 1: Set de tenis
+    if(a+b)>c and (a+c)>b and (b+c)>a:
+        ar = [a,b,c]
+        pr = set(ar)
+        t = len(pr)
+        if(t == 1):
+            return f'El triángulo es equilátero'
+        elif(t == 2):
+            return f'El triángulo es isósceles'
+        else:
+            return f'El triángulo es escaleno'
+    else:
+        return "No es un triángulo válido"
+
     return ""
 
 if __name__ == '__main__':

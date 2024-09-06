@@ -1,5 +1,7 @@
 def evaluar(numero1, numero2, numero3, numero4):
-    # TODO: Coloca aquí el código del ejercicio 5: Ordenamiento
+    n = [numero1,numero2,numero3,numero4]
+    n.sort()
+    return f'{n[0]} {n[1]} {n[2]} {n[3]}'
     return "";
 
 if __name__ == '__main__':
